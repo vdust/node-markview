@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= req.app.get('title') + ' - ' + name
+    each k in cssOrder
+      if css[k]
+        link(href=req.baseUrl + cssMount + '/' + k, rel='stylesheet', type='text/css')
+  body
+    div.markdown-body
+      != contents

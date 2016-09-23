@@ -1,0 +1,13 @@
+*~
+\#*
+*.bak
+*.old
+*.bz2
+*.gz
+*.tgz
+*.tbz2
+*.patch
+
+node_modules
+
+npm-debug*

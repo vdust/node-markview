@@ -1,0 +1,37 @@
+{
+  "name": "markview",
+  "description": "A simple markdown (kramdown) preview server.",
+  "author": "Raphaël Bois Rousseau <virtualdust@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vdust/node-markview.git"
+  },
+  "homepage": "https://github.com/vdust/node-markview",
+  "bugs": {
+    "url": "https://github.com/vdust/node-markview/issues"
+  },
+  "keywords": [
+    "command",
+    "development",
+    "kramdown",
+    "markdown",
+    "md",
+    "util"
+  ],
+  "dependencies": {
+    "express": "^4.14.0",
+    "github-markdown-css": "^2.4.0",
+    "highlight.js": "^9.7.0",
+    "kramed": "^0.5.6",
+    "pug": "^2.0.0-beta6"
+  },
+  "bin": {
+    "markview": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"No automated tests, really.\""
+  }
+}
