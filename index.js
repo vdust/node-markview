@@ -35,7 +35,7 @@ var defaults = {
       if (!highlight) highlight = require('highlight.js').highlight;
       return kramed(data, {
         renderer: null, // needed for synchronous highlight to be enabled
-        highlight: (code, lang) => highlight(lang, code).value
+        highlight: (code, lang) => lang ? highlight(lang, code).value : null
       }, done);
     };
   })(),
