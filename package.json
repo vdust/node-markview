@@ -22,11 +22,11 @@
     "util"
   ],
   "dependencies": {
-    "express": "^4.14.0",
-    "github-markdown-css": "^2.4.0",
-    "highlight.js": "^9.7.0",
+    "express": "^4.17.3",
+    "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.5.1",
     "kramed": "^0.5.6",
-    "pug": "^2.0.0-beta6"
+    "pug": "^3.0.2"
   },
   "bin": {
     "markview": "./cli.js"
