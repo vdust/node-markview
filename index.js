@@ -114,6 +114,10 @@ module.exports = exports = function (opts) {
     return /\.(md|markdown)$/.test(path);
   }
 
+  function imageFilter(path) {
+    return /\.(png|jpg|jpeg|gif|svg)$/.test(path);
+  }
+
   for (var f in options.files) {
     (() => {
       var p = f.replace(/^\/+|\/+$/g, '');
@@ -129,6 +133,7 @@ module.exports = exports = function (opts) {
           var relpath = req.path.replace(/^\/+/, '');
 
           if (req.method !== 'GET') return next();
+          if (relpath && imageFilter(relpath)) return res.sendFile(resolve(def.root, relpath));
           if (!relpath || !filter(relpath)) return res.sendStatus(404);
 
           serveMarkdown(basename(relpath), resolve(def.root, relpath), req, res);

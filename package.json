@@ -2,7 +2,7 @@
   "name": "markview",
   "description": "A simple markdown (kramdown) preview server.",
   "author": "Raphaël Bois Rousseau <virtualdust@gmail.com>",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "index.js",
   "repository": {
